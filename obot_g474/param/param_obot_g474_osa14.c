@@ -21,9 +21,9 @@ const volatile Param __attribute__ ((section ("flash_param"))) param_store = {
     .fast_loop_param.adc1_offset = 1500,
     .fast_loop_param.adc2_offset = 1500,
     .fast_loop_param.adc3_offset = 1500,
-    .fast_loop_param.adc1_gain = 3.0/4096/(10000/2000.0),  // A/count
-    .fast_loop_param.adc2_gain = 3.0/4096/(10000/2000.0),
-    .fast_loop_param.adc3_gain = 3.0/4096/(10000/2000.0), 
+    .fast_loop_param.adc1_gain = 3.0/4096*1.5,  // A/count
+    .fast_loop_param.adc2_gain = 3.0/4096*1.5),
+    .fast_loop_param.adc3_gain = 3.0/4096*1.5, 
     .fast_loop_param.motor_encoder.dir = -1,
     .fast_loop_param.phase_mode = 1,
     .fast_loop_param.motor_encoder.cpr = 7*65536,
@@ -70,7 +70,7 @@ const volatile Param __attribute__ ((section ("flash_param"))) param_store = {
 //#include "tab.csv"
     },
     .startup_param.do_phase_lock = 1,
-    .startup_param.phase_lock_current = 2,
+    .startup_param.phase_lock_current = 1,
     .startup_param.phase_lock_duration = 1,
     .startup_param.motor_encoder_startup = ENCODER_BIAS_FROM_OUTPUT,
     .name = "A1",
