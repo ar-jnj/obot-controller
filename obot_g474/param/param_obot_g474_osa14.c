@@ -70,8 +70,8 @@ const volatile Param __attribute__ ((section ("flash_param"))) param_store = {
 //#include "tab.csv"
     },
     .startup_param.do_phase_lock = 1,
-    .startup_param.phase_lock_current = -5,
-    .startup_param.phase_lock_duration = 2,
+    .startup_param.phase_lock_current = 2,
+    .startup_param.phase_lock_duration = 1,
     .startup_param.motor_encoder_startup = ENCODER_BIAS_FROM_OUTPUT,
     .name = "A1",
 #ifdef PARAM_OVERRIDES
