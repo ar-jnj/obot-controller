@@ -184,7 +184,7 @@ void pin_config_obot_g474_osa() {
         // nsleep pins are enable, set as outputs
         GPIO_SETH(C, 13, GPIO_MODE::OUTPUT, GPIO_SPEED::LOW, 0);
         GPIO_SETH(C, 15, GPIO_MODE::OUTPUT, GPIO_SPEED::LOW, 0);
-        mps_driver_enable(3);
+        mps_driver_enable(1);
 }
 
 extern "C" void RTC_WKUP_IRQHandler() {
