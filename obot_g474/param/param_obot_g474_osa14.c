@@ -2,7 +2,7 @@
 #include "math.h"
 
 #define V_REF 3.0
-//
+
 // Can be written by external methods, e.g. bootloader
 const volatile Param __attribute__ ((section ("flash_param"))) param_store = {
     .fast_loop_param.foc_param.pi_d.kp=4,
